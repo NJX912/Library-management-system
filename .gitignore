@@ -1,0 +1,60 @@
+# ---- 构建产物 ----------------------------------------------------------
+build/
+cmake-build-*/
+out/
+bin/
+lib/
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+CMakeUserPresets.json
+cmake_install.cmake
+CTestTestfile.cmake
+install_manifest.txt
+compile_commands.json
+Makefile
+
+# ---- IDE / 编辑器 ------------------------------------------------------
+.vs/
+.vscode/
+.idea/
+*.vcxproj
+*.vcxproj.*
+*.sln
+*.suo
+*.user
+*.code-workspace
+
+# ---- 运行时数据 --------------------------------------------------------
+# 数据文件是程序自身的运行状态，不纳入版本控制；
+# 目录占位说明 data/README.md 不属于该模式，会被正常跟踪。
+data/*.txt
+data/*.txt.tmp
+data/*.tmp
+
+# ---- 调试 / 系统文件 ---------------------------------------------------
+*.pdb
+*.ilk
+*.log
+debug/
+Release/
+.vsdebug/
+Thumbs.db
+Desktop.ini
+*.swp
+*~
+
+# ---- 测试与覆盖率 ------------------------------------------------------
+Testing/
+*.gcda
+*.gcno
+*.gcov

@@ -1,0 +1,26 @@
+# 仓库内统一使用 LF 存储与检出，避免 Windows/Linux 协作时的换行符噪音。
+* text=auto eol=lf
+
+# Windows 专有文件保持 CRLF
+*.sln  text eol=crlf
+*.vcxproj      text eol=crlf
+*.vcxproj.*    text eol=crlf
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+*.ps1  text eol=crlf
+
+# 二进制文件不做任何换行转换
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.pdf  binary
+*.exe  binary
+*.dll  binary
+*.a    binary
+*.lib  binary
+
+# 语言统计时把测试与文档排除在外
+tests/**  linguist-documentation=false
+*.md      linguist-detectable=true
